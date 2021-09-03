@@ -1,0 +1,12 @@
+body {
+    background-color: beige;
+}
+
+h1 {
+    color: tomato;
+    transition:color .5s ease-in-out; /*색이 0.5초 동안 바뀐다.*/
+}
+
+.clicked { /*class이름이 clicked인것*/
+    color: blue;
+}
