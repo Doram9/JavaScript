@@ -6,11 +6,31 @@
     <link rel="stylesheet" href="MainCSS.css" />
 </head>
 <body>
+    <h2 id="clock">00:00</h2>
     <form class="hidden" id="login-form">
-      <input required maxlength="15" type="text" id="username" placeholder="what is your name?" />
+      <input type="text" id="username" placeholder="what is your name?" required maxlength="15" />
       <input type="submit" value="Log In" />
     </form>
     <h1 id="greeting" class="hidden"></h1>
+    <form id="todo-form">
+        <input type="text" placeholder="Write a To do and Press" required />
+    </form>
+    <ul id="todo-List">
+    </ul>
+
+    <div id="quote">
+        <span></span>
+        <span></span>
+    </div>
+    <div id="weather">
+        <span></span>
+        <span></span>
+    </div>
     <script src="MainJS.js"></script>
+    <script src="Main_Clock.js"></script>
+    <script src="Main_quotees.js"></script>
+    <script src="Main_background.js"></script>
+    <script src="Main_Todo.js"></script>
+    <script src="Main_weather.js"></script>
 </body>
 </html>
