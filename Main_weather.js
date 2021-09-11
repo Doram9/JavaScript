@@ -1,10 +1,12 @@
-const API_KEY = "7e032cf567e797bf90893aca67185aa4";
+const API_KEY = "84a8e86fd5a65aea6735b98ee784349e";
 
 function onGeoOk(position) {
     console.log(position);
     const lat = position.coords.latitude; //위도
+    console.log(lat);
     const lon = position.coords.longitude; //경도
-    const url = `api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}units=metric`;
+    console.log(lon);
+    const url = `api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}`;
     fetch(url).then(response => response.json()).then(data => {
         const weather = document.querySelector("#weather span:first-child");
         const city = document.querySelector("#weather span:last-child");

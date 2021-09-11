@@ -40,9 +40,7 @@ const quotes = [
         movie: "신세계"
     }
 ]
-const quote = document.querySelector("#quote span:first-child");
-const movie = document.querySelector("#quote span:last-child");
+const quote = document.querySelector("#quote");
 
 const todayQuote = quotes[Math.floor(Math.random() * quotes.length)];
-quote.innerText = todayQuote.quote;
-movie.innerText = todayQuote.movie;
+quote.innerText = todayQuote.quote + "-" + todayQuote.movie + "-";
