@@ -1,7 +1,6 @@
 const API_KEY = "84a8e86fd5a65aea6735b98ee784349e";
 
 function onGeoOk(position) {
-    console.log(position);
     const lat = position.coords.latitude; //위도
     console.log(lat);
     const lon = position.coords.longitude; //경도
